@@ -1,6 +1,14 @@
+/*globals*/
 :root {
     color-scheme: dark;
+    --primary-color: #23b5e8;
+    --black--color: #010508;
+    --white--color: #f1f5f8;
+    --size: 0.25rem;
+    --primary-font: monospace;
+    --max-width: 1024px;
 }
+
 
 a {
     color: rgb(233, 236, 48);
@@ -9,7 +17,7 @@ a {
 
 .body {
     margin: 0;
-    font-family: monospace;
+    font-family: var(--primaary-font);
 }
 
 .flexbox {
@@ -20,9 +28,10 @@ a {
     align-items: center;
     justify-content: space-between;
 }
+/*layout*/
 .container {
-    padding-inline: 1rem;
-    max-width: 1024px;
+    padding-inline: calc(var(--size) * 4);
+    max-width: var(--max-width);
     margin-inline: auto;
 }
 
@@ -32,18 +41,17 @@ a {
 }
 */
 .nav {
-    padding-block: 1rem;
+    padding-block: calc(var(--size) * 4);
 }
 
 .hero {
-    background-color: gray;
-    padding-block: 8rem;
+    padding-block: calc(var(--size) * 32);
     text-align: center;
 }
 
 .hero__title{
     margin: 0;
-    font-size: 4rem;
+    font-size: calc(var(--size) * 16);
 }
 
 .list {
@@ -54,21 +62,21 @@ a {
 
 /* elements */
 .link{
-    font-size: 0.875rem;
+    font-size: calc(var(--size) * 3.5);
     font-weight: 600;
-    color: white;
+    color: var(--white--color);
     text-decoration: none;
 }
 .button{
     padding: 0.5em 1em;
-    font-size: 0.875rem;
+    font-size: calc(var(--size) * 3.5);
     font-weight: 600;
     text-decoration: none;
     border-radius: 15%;
 }
 .button--primary {
-    background-color: #23b5e8;
-    color: black;
+    background-color: var(--primary-color);
+    color: var(--black--color);
 }
 
 /* .utils*/
@@ -76,9 +84,9 @@ a {
     display: flex;
 } 
 .g-2 {
-    gap: 2.5rem
+    gap: calc(var(--size) * 10);
 }
 
 .c-primary{
-    color: #23b5e8;
+    color: var(--primary-color);
 }
