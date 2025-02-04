@@ -4,11 +4,16 @@
     --primary-color: #23b5e8;
     --black--color: #010508;
     --white--color: #f1f5f8;
-    --size: 0.25rem;
+    --size: 0.21875rem;
     --primary-font: monospace;
     --max-width: 1024px;
 }
 
+@media (width >= 768px) {
+    :root {
+        --size: 0.25rem;
+    }
+}
 
 a {
     color: rgb(233, 236, 48);
