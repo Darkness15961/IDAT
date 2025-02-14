@@ -13,8 +13,8 @@
     <header class="header">
         <nav class="nav">
             <div class="container flexbox flexbox--centered-spaced">
-            <a href="#" class="logo">
-                <img src="./assets/img/logo.svg" alt="Logo de Idat" width="24" height="40">
+            <a href="#">
+                <img src="./assets/img/logo.svg" alt="Logo de Idat" width="24" height="40" class="img">
             </a>
             <ul class="list d-flex g-2">
                 <li>
@@ -24,26 +24,25 @@
                     <a href="#" class="link">Proyectos</a>
                 </li>
             </ul>
-            <a href="#contact" class="button button--primary">Inscribete</a>
+            <a href="#contact" class="button button--primary">Inscríbete</a>
         </div>
         </nav>
     </header>
-    <main>
+    <main class="main">
         <article class="hero">
             <div class="container">
                 <div class="d-flex f-direction-column a-items-center g-4">
                 <h1 class="hero__title">Aprende 
                     <span class="c-primary">desarrollo web</span> 
                     gratis con los mejores</h1>
-                <p>El mejor centro educativo del Perú, aprende de todo en un solo lugar gratis e impulsa tu futuro</p>
+                <p class="hero__paragraph">El mejor centro educativo del Perú, aprende de todo en un solo lugar gratis e impulsa tu futuro</p>
                 <a href="#contact" class="button button--primary button--beat">Empezar a aprender</a>
                 </div>    
             </div>
         </article>
-        <section>
-                <div class="container">
-                    <div>
-                        <a href="#" class=" link  card card--overlay">
+        <section class="section">
+                <div class="container g-layout g-layout--auto-fit-columns-lg">
+                    <a href="#" class="card card--overlay">
                         <div class="card__body">
                             <img src="https://img2.wallspic.com/previews/4/8/2/7/6/167284/167284-react_js-react-javascript-javascript_library-next_js-x750.jpg" alt="Desarrollo Frontend" 
                             width="426" height="240" class="img img--background">
@@ -57,31 +56,35 @@
                         <p class="text text--sm">Aprende a construir aplicaciones web Frontend con las 
                             tegnologias mas modernas y demandadas del mercado</p>
                         </div>
-                        </a>
+                    </a>
+                    <a href="#" class="card card--overlay">
+                        <div class="card__body">
+                            <img src="https://img2.wallspic.com/previews/4/8/2/7/6/167284/167284-react_js-react-javascript-javascript_library-next_js-x750.jpg" alt="Desarrollo Frontend" 
+                            width="426" height="240" class="img img--background">
+                                <ul class="list d-flex g-2">
+                                        <li class="badge badge--primary interactive interactive--sm">Node.js</li>
+                                        <li class="badge badge--primary interactive interactive--sm">Express</li>
+                                        <li class="badge badge--primary interactive interactive--sm">MongoDB</li>
+                                        <li class="badge badge--primary interactive interactive--sm">SQL</li>
+                                </ul>
+                        <h3 class="title title--xs">Desarrollo Backend</h3>
+                        <p class="text text--sm">Aprende a construir servidores y APIs con las tecnologías más modernas y demandadas del mercado.</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
         </section>
-        <selection id="Contact">
-            <div>
-                <h2>Inscríbete</h2>
-                <form>
-                    <label for="name">Nombre</label>
-                    <input type="text" name="name" id="name" placeholder="Ingrese su nombre" required pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+" title="El nombre solo debe contener letras y espacios."><br>
-                    
-                    <label for="last-name">Apellido</label>
-                    <input type="text" name="last-name" id="lastname" placeholder="Ingrese su Apellido" required pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+" title="El apellido solo debe contener letras y espacios."><br>
-                    
-                    <label for="phone">Celular</label>
-                    <input type="tel" name="phone" id="phone" placeholder="Ingrese su nª celular" required pattern="\d{9}" title="El número de celular debe contener exactamente 9 dígitos."><br>
-                    
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Ingrese su Email" required><br>
-                    
-                    <label for="dni">DNI</label>
-                    <input type="text" name="DNI" id="DNI" placeholder="Ingrese su DNI" required pattern="\d{8}" title="El DNI debe contener exactamente 8 dígitos."><br>
-                    
-                    <input type="submit" value="Enviar">
+        <selection id="Contact" class="section">
+            <div class="container d-flex f-direction-column a-items-center g-4">
+                <h2 class="title t-align-center">Inscríbete</h2>
+                <form class="form d-flex f-direction-column g-1">
+                    <div class="d-flex g-2">
+                        <input type="text" class="form__input interactive f-1" name="name" placeholder="Ingrese su nombre" required pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+" title="El nombre solo debe contener letras y espacios.">
+                        <input type="text" class="form__input  interactive f-1" name="last-name"  placeholder="Ingrese su Apellido" required pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+" title="El apellido solo debe contener letras y espacios.">    
+                    </div>
+                    <input type="tel"  class="form__input interactive"  placeholder="Ingrese su nª celular" required pattern="\d{9}" title="El número de celular debe contener exactamente 9 dígitos.">
+                    <input type="email" class="form__input interactive"   placeholder="Ingrese su Email" required>
+                    <input type="text" class="form__input interactive"   placeholder="Ingrese su DNI" required pattern="\d{8}" title="El DNI debe contener exactamente 8 dígitos.">
+                    <input type="submit" class="button button--primary interactive" value="Enviar">
                 </form>
             </div>
         </selection>
